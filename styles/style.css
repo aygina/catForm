@@ -57,7 +57,22 @@ input[type=tel] {
     border-radius: 0.25rem;
 }
 
+input[type=file] {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+input::file-selector-button {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 0.8rem;
+    padding: 0.5em;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+}
+
 select {
+    height: 4vh;
     font-family: 'Comfortaa', sans-serif;
     font-size: 0.8rem;
     border: 1px solid #bdbdbd;
