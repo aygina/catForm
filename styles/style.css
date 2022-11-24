@@ -71,6 +71,14 @@ input::file-selector-button {
     border-radius: 0.25rem;
 }
 
+input:required:valid {
+    border: 1px solid rgb(22, 194, 19);
+}
+
+select:required:valid {
+    border: 1px solid rgb(22, 194, 19);
+}
+
 select {
     height: 4vh;
     font-family: 'Comfortaa', sans-serif;

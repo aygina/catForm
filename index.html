@@ -15,24 +15,26 @@
 </head>
 
 <body>
-    
+
     <div class="wrapper">
         <div class="form">
             <h2>Кошачий опросник</h2>
             <div>
-                <label for="petsName">Имя питомца:</label>
+                <label for="petsName">Имя питомца*:</label>
                 <input type="text" id="petsName" required>
             </div>
             <div>
-                <label for="yourName">Ваше имя:</label>
+                <label for="yourName">Ваше имя*:</label>
                 <input type="text" id="yourName" required>
             </div>
-            <div>
-                <label for="phone">Контактный номер:</label>
-                <input type="tel" id="phone">
-            </div>
-            <div> Выберите породу питомца:
-                <select>
+            <form action="demo">
+                <label for="phone">Контактный номер*:</label>
+                <input type="tel" id="phone" pattern="[0-9]{10}" required />
+                <small>введите 10-значный номер</small>
+            </form>
+            <div> Выберите породу питомца*:
+                <select required>
+                    <option value="">Выберите</option>
                     <option value="first">Британская</option>
                     <option value="second">Бенгальская</option>
                     <option value="third">Шотландская</option>
@@ -45,18 +47,19 @@
                 <input type="checkbox" name="food" id="2">Сухой корм<br>
                 <input type="checkbox" name="food" id="3">Натуральный корм
             </div>
-            <div >
+            <div>
                 <label for="sex">Пол питомца:</label>
                 <input type="radio" checked="checked" name="sex" id="sex" value="female">Женский
                 <input type="radio" name="sex" id="sex" value="male">Мужской
             </div>
             <div>
                 <p>Комментарий владельца:</p>
-                <textarea name="comment" id="comment" cols="50" rows="15">Ваш комментарий</textarea>
+                <textarea name="comment" id="comment" cols="50" rows="15" placeholder="Ваш комментарий"
+                    optional></textarea>
             </div>
             <div>
                 <p>Приложить фото питомца:</p>
-                <input type="file" name="photo" id="photo">
+                <input type="file" name="photo" id="photo" optional>
             </div>
             <div>
                 <button>Сохранить</button>
@@ -64,4 +67,5 @@
         </div>
     </div>
 </body>
+
 </html>
