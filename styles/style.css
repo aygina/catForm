@@ -111,3 +111,7 @@ button {
     margin-top: 10px;
     cursor: pointer;
 }
+
+button:hover {
+    opacity: 80%;
+}

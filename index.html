@@ -33,24 +33,26 @@
                 <small>введите 10-значный номер</small>
             </form>
             <div> Выберите породу питомца*:
-                <select required>
+                <select id="petsBreed" required>
                     <option value="">Выберите</option>
-                    <option value="first">Британская</option>
-                    <option value="second">Бенгальская</option>
-                    <option value="third">Шотландская</option>
-                    <option value="forth">Мейн-кун</option>
+                    <option value="Британская">Британская</option>
+                    <option value="Бенгальская">Бенгальская</option>
+                    <option value="Шотландская">Шотландская</option>
+                    <option value="Мейн-кун">Мейн-кун</option>
                 </select>
             </div>
             <div>
                 Чем питается:
-                <input type="checkbox" name="food" id="1">Влажный корм
-                <input type="checkbox" name="food" id="2">Сухой корм<br>
-                <input type="checkbox" name="food" id="3">Натуральный корм
+                <div class="petsFood">
+                    <input class='food' type="checkbox" name="food" id="1" value="Влажный корм">Влажный корм
+                    <input class='food' type="checkbox" name="food" id="2" value="Сухой корм">Сухой корм<br>
+                    <input class='food' type="checkbox" name="food" id="3" value="Натуральный корм">Натуральный корм
+                </div>
             </div>
             <div>
                 <label for="sex">Пол питомца:</label>
-                <input type="radio" checked="checked" name="sex" id="sex" value="female">Женский
-                <input type="radio" name="sex" id="sex" value="male">Мужской
+                <input class="sex" type="radio" checked="checked" name="sex" id="sex" value="Женский">Женский
+                <input class="sex" type="radio" name="sex" id="sex" value="Мужской">Мужской
             </div>
             <div>
                 <p>Комментарий владельца:</p>
@@ -62,10 +64,11 @@
                 <input type="file" name="photo" id="photo" optional>
             </div>
             <div>
-                <button>Сохранить</button>
+                <button onclick="getInfo();">Сохранить</button>
             </div>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
