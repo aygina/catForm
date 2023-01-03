@@ -7,7 +7,7 @@ class Cat {
     }
 }
 
-postButton.addEventListener("click", getInfo());
+postButton.addEventListener("click", getInfo);
 
 function getInfo() {
     let petsName = document.getElementById('petsName').value;

@@ -17,24 +17,25 @@
 <body>
 
     <div class="wrapper">
-        <div class="form">
+        <div class="opros">
             <h2>Кошачий опросник</h2>
+
             <form id="userForm" method="post" action="/post" enctype="multipart/form-data">
                 <div>
                     <label for="petsName">Имя питомца*:</label>
-                    <input type="text" id="petsName" required>
+                    <input type="text" id="petsName" name="petsName" required>
                 </div>
                 <div>
                     <label for="yourName">Ваше имя*:</label>
-                    <input type="text" id="yourName" required>
+                    <input type="text" id="yourName" name="userName" required>
                 </div>
-                <div class="info">
+                <div>
                     <label for="phone">Контактный номер*:</label>
-                    <input type="tel" id="phone" pattern="[0-9]{10}" required />
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required />
                     <small>введите 10-значный номер</small>
                 </div>
                 <div> Выберите породу питомца*:
-                    <select id="petsBreed" required>
+                    <select id="petsBreed" name="breed" required>
                         <option value="">Выберите</option>
                         <option value="Британская">Британская</option>
                         <option value="Бенгальская">Бенгальская</option>
@@ -45,7 +46,8 @@
                 <div>
                     Чем питается:
                     <div class="petsFood">
-                        <input class='food' type="checkbox" name="food" id="1" value="Влажный корм" checked="checked">Влажный корм
+                        <input class='food' type="checkbox" name="food" id="1" value="Влажный корм"
+                            checked="checked">Влажный корм
                         <input class='food' type="checkbox" name="food" id="2" value="Сухой корм">Сухой корм<br>
                         <input class='food' type="checkbox" name="food" id="3" value="Натуральный корм">Натуральный корм
                     </div>
@@ -71,7 +73,7 @@
         </div>
     </div>
     <script src="formdata.js"></script>
-    <!-- <script src="index.js"></script> -->
+    <script src="index.js"></script>
 </body>
 
 </html>

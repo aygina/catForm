@@ -8,7 +8,7 @@ postButton.onclick = function (event) {
             method: 'POST',
             body: data,
             headers: {
-                'Content-Type': 'multipart/form-data; charset=utf-8'
+                'Content-Type': 'multipart/form-data;'
             },
         })
         .then(response => response.json())
