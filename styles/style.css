@@ -24,6 +24,12 @@ body {
     height: 98vh;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
 input[type=text] {
     display: block;
     width: 88%;

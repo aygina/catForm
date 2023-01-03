@@ -7,6 +7,8 @@ class Cat {
     }
 }
 
+postButton.addEventListener("click", getInfo());
+
 function getInfo() {
     let petsName = document.getElementById('petsName').value;
     let petsBreed = document.getElementById('petsBreed').value;
@@ -14,5 +16,5 @@ function getInfo() {
     let petsSex = document.querySelector('.sex:checked').value;
 
     let myCat = new Cat(petsName, petsBreed, petsFood, petsSex);
-    alert(JSON.stringify(myCat, null, 2));
+    console.log(JSON.stringify(myCat, null, 2));
 }
